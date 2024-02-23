@@ -1,0 +1,65 @@
+name: dockercompose8648552723261044005
+services:
+  db:
+    environment:
+      ACCEPT_EULA: "Y"
+      MSSQL_PID: Express
+      SA_PASSWORD: Password1@
+    image: mcr.microsoft.com/mssql/server:2017-latest-ubuntu
+    networks:
+      my-network: null
+    ports:
+      - mode: ingress
+        target: 1433
+        published: "1444"
+        protocol: tcp
+  web:
+    build:
+      context: C:\Users\admin\OneDrive\Documents\Visual Studio 2022\Project\docker_sql
+      dockerfile: Dockerfile
+      labels:
+        com.microsoft.created-by: visual-studio
+        com.microsoft.visual-studio.project-name: docker_sql
+    container_name: docker_sql
+    entrypoint:
+      - tail
+      - -f
+      - /dev/null
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+    image: docker_sql
+    labels:
+      com.microsoft.visual-studio.project-name: docker_sql
+      com.microsoft.visualstudio.debuggee.arguments: ' --additionalProbingPath /root/.nuget/packages  ""'
+      com.microsoft.visualstudio.debuggee.killprogram: /bin/sh -c "if PID=$$(pidof dotnet); then kill $$PID; fi"
+      com.microsoft.visualstudio.debuggee.program: dotnet
+      com.microsoft.visualstudio.debuggee.workingdirectory: /app
+    networks:
+      my-network: null
+    ports:
+      - mode: ingress
+        target: 80
+        published: "7642"
+        protocol: tcp
+    tty: true
+    volumes:
+      - type: bind
+        source: C:\Users\admin\vsdbg\vs2017u5
+        target: /remote_debugger
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Users\admin\AppData\Roaming/ASP.NET/Https
+        target: /root/.aspnet/https
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Users\admin\AppData\Roaming/Microsoft/UserSecrets
+        target: /root/.microsoft/usersecrets
+        read_only: true
+        bind:
+          create_host_path: true
+networks:
+  my-network:
+    name: dockercompose8648552723261044005_my-network

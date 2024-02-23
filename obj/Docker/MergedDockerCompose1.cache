@@ -1,0 +1,20 @@
+name: dockercompose8648552723261044005
+services:
+  db:
+    environment:
+      ACCPECT_EULA: "Y"
+      MSSQL_PID: Express
+      SA_PASSWORD: Password123@
+      TrustServerCertificate: "true"
+      mcr.microsoft.com/mssql/server: 2012-latest
+    image: dockersql
+    networks:
+      default: null
+    ports:
+      - mode: ingress
+        target: 1433
+        published: "1433"
+        protocol: tcp
+networks:
+  default:
+    name: dockercompose8648552723261044005_default

@@ -1,0 +1,52 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+@model IEnumerable<docker_sql.Models.KhachHangModel>
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+<p>111111111111</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.sTenKH)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.sDiachi)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.sDienthoai)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.bGioitinh)
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.sTenKH)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.sDiachi)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.sDienthoai)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.bGioitinh)
+                </td>
+                <td>
+                    <!--    <a asp-action="Edit" asp-route-id="@item.iMaKH">Edit</a> | -->
+                    <!--    <a asp-action="Details" asp-route-id="@item.iMaKH">Details</a> | -->
+                    <!--   <a asp-action="Delete" asp-route-id="@item.iMaKH">Delete</a> -->
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

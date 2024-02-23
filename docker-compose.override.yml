@@ -1,0 +1,22 @@
+version: '3.4'
+
+services:
+  web:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - DBServer=db
+    ports:
+      - "7642:80"
+    networks:
+      - my-network
+  db:
+    environment:
+      - ACCEPT_EULA=Y
+      - MSSQL_PID=Express
+      - SA_PASSWORD=Password1@
+    ports:
+      - "1433:1433"
+    networks:
+     - my-network  
+networks:
+  my-network:

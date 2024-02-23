@@ -1,0 +1,17 @@
+C:\Users\admin\OneDrive\Documents\Visual Studio 2022\Project\docker_sql\bin\Debug\docker_sql.deps.json
+C:\Users\admin\OneDrive\Documents\Visual Studio 2022\Project\docker_sql\bin\Debug\docker_sql.runtimeconfig.json
+C:\Users\admin\OneDrive\Documents\Visual Studio 2022\Project\docker_sql\bin\Debug\appsettings.Development.json
+C:\Users\admin\OneDrive\Documents\Visual Studio 2022\Project\docker_sql\bin\Debug\appsettings.json
+C:\Users\admin\OneDrive\Documents\Visual Studio 2022\Project\docker_sql\bin\Debug\docker_sql.staticwebassets.runtime.json
+C:\Users\admin\OneDrive\Documents\Visual Studio 2022\Project\docker_sql\bin\Debug\docker_sql.exe
+C:\Users\admin\OneDrive\Documents\Visual Studio 2022\Project\docker_sql\bin\Debug\docker_sql.dll
+C:\Users\admin\OneDrive\Documents\Visual Studio 2022\Project\docker_sql\bin\Debug\docker_sql.pdb
+C:\Users\admin\OneDrive\Documents\Visual Studio 2022\Project\docker_sql\obj\Debug\docker-compose.dcproj.AssemblyReference.cache
+C:\Users\admin\OneDrive\Documents\Visual Studio 2022\Project\docker_sql\obj\Debug\docker-compose.dcproj.CoreCompileInputs.cache
+C:\Users\admin\OneDrive\Documents\Visual Studio 2022\Project\docker_sql\obj\Debug\docker-compose.dcproj.CopyComplete
+C:\Users\admin\OneDrive\Documents\Visual Studio 2022\Project\docker_sql\bin\Debug\Microsoft.EntityFrameworkCore.dll
+C:\Users\admin\OneDrive\Documents\Visual Studio 2022\Project\docker_sql\bin\Debug\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\admin\OneDrive\Documents\Visual Studio 2022\Project\docker_sql\bin\Debug\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\admin\OneDrive\Documents\Visual Studio 2022\Project\docker_sql\bin\Debug\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\admin\OneDrive\Documents\Visual Studio 2022\Project\docker_sql\bin\Debug\Microsoft.Data.SqlClient.dll
+C:\Users\admin\OneDrive\Documents\Visual Studio 2022\Project\docker_sql\bin\Debug\Microsoft.Identity.Client.dll
